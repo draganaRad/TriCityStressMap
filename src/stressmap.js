@@ -22,6 +22,7 @@ const layer = L.tileLayer(
 layer.addTo(map)
 // Add BikeOttawa attribution
 map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
+map.attributionControl.addAttribution('<a href="https://www.openstreetmap.org">Improve this map</a>');
 
 addLegend()
 addStressLayers()
