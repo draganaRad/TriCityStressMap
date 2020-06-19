@@ -164,74 +164,74 @@ function addLegendLine (setting) {
 }
 
 
-function addIconLayers(){
+// function addIconLayers(){
 
-  const providers = [];
-  providers.push({
-      title: 'mapnik',
-      icon: 'img/icons-mapnik.png',
-      layer: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 22,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      })
-  });
+//   const providers = [];
+//   providers.push({
+//       title: 'mapnik',
+//       icon: 'img/icons-mapnik.png',
+//       layer: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//           maxZoom: 22,
+//           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+//       })
+//   });
 
-  providers.push({
-      title: 'osm bw',
-      icon: 'img/icons-osm-bw.png',
-      layer: L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
-          maxZoom: 22,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      })
-  });
+//   providers.push({
+//       title: 'osm bw',
+//       icon: 'img/icons-osm-bw.png',
+//       layer: L.tileLayer('http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+//           maxZoom: 22,
+//           attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+//       })
+//   });
 
-  providers.push({
-      title: 'streets',
-      icon: 'img/icons-streets.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.streets',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
-      })
-  });
+//   providers.push({
+//       title: 'streets',
+//       icon: 'img/icons-streets.png',
+//       layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//           attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+//           maxZoom: 22,
+//           id: 'mapbox.streets',
+//           accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
+//       })
+//   });
 
-  providers.push({
-      title: 'satellite',
-      icon: 'img/icons-satellite.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.satellite',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
-      })
-  });
+//   providers.push({
+//       title: 'satellite',
+//       icon: 'img/icons-satellite.png',
+//       layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//           attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+//           maxZoom: 22,
+//           id: 'mapbox.satellite',
+//           accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
+//       })
+//   });
 
-  providers.push({
-      title: 'light',
-      icon: 'img/icons-light.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.light',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
-      })
-  });
+//   providers.push({
+//       title: 'light',
+//       icon: 'img/icons-light.png',
+//       layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//           attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+//           maxZoom: 22,
+//           id: 'mapbox.light',
+//           accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
+//       })
+//   });
 
-  providers.push({
-      title: 'run-bike-hike',
-      icon: 'img/icons-run-bike-hike.png',
-      layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-          attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
-          maxZoom: 22,
-          id: 'mapbox.run-bike-hike',
-          accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
-      })
-  });
+//   providers.push({
+//       title: 'run-bike-hike',
+//       icon: 'img/icons-run-bike-hike.png',
+//       layer: L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+//           attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
+//           maxZoom: 22,
+//           id: 'mapbox.run-bike-hike',
+//           accessToken: 'pk.eyJ1IjoienpwdGljaGthIiwiYSI6ImNqN2FubTQ5ejBpZDAyd285MmZsdHN3d3IifQ.dc6SvmJLcl7KGPQlBYFj-g'
+//       })
+//   });
 
-  L.control.iconLayers(providers).addTo(map);
+//   L.control.iconLayers(providers).addTo(map);
 
-}
+// }
 
 
 function getFeaturesNearby(point, maxMeters, breakOnFirst)
@@ -251,7 +251,7 @@ function getFeaturesNearby(point, maxMeters, breakOnFirst)
 }
 
 
-function displayOsmElementInfo(element, latlng) {
+function displayOsmElementInfo(element, latlng, decisionMsg) {
 
   const xhr = new XMLHttpRequest()
   xhr.open('GET','https://api.openstreetmap.org/api/0.6/'+element)
@@ -264,6 +264,7 @@ function displayOsmElementInfo(element, latlng) {
       {
         popup += tags[i].attributes["k"].value+": <b>"+tags[i].attributes["v"].value+'</b><br>';
       }
+      popup += decisionMsg+'<br>';
     } else {
       popup += 'Failed to request details from osm.org';
     }
@@ -297,7 +298,7 @@ map.on('click', function(e) {
   if (features.length!=0) {
     //displayOsmElementInfo(features[0].id, e.latlng);
     // dragana rad
-    displayOsmElementInfo(features[0].properties.id, e.latlng);
+    displayOsmElementInfo(features[0].properties.id, e.latlng, features[0].properties.decisionMsg);
     highlight = new L.geoJson(features[0],{style: {color:'#df42f4',  weight: 5}}).addTo(map);
     map.on('popupclose', function() {
      map.removeLayer(highlight)
