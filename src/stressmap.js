@@ -1,10 +1,14 @@
 const map = L.map('mapid').setView([49.279366, -122.790463], 12)
-const settings = [{ color: '#1C7C54', weight: 3, key: 'LTS1', zIndex: 1, title: 'LTS 1 - Suitable for Children', url: 'data/level_1.json' },
-                { color: '#0099cc', weight: 3, key: 'LTS2', zIndex: 2, title: 'LTS 2 - Low Stress', url: 'data/level_2.json' },
-                { color: '#F0C808', weight: 3, key: 'LTS3', zIndex: 3, title: 'LTS 3 - Moderate Stress', url: 'data/level_3.json' },
-                { color: '#DD5454', weight: 3, key: 'LTS4', zIndex: 4, title: 'LTS 4 - High Stress', url: 'data/level_4.json' }]
+// const settings = [{ color: '#1C7C54', weight: 3, key: 'LTS1', zIndex: 1, title: 'LTS 1 - Suitable for Children', url: 'data/level_1.json' },
+//                 { color: '#0099cc', weight: 3, key: 'LTS2', zIndex: 2, title: 'LTS 2 - Low Stress', url: 'data/level_2.json' },
+//                 { color: '#F0C808', weight: 3, key: 'LTS3', zIndex: 3, title: 'LTS 3 - Moderate Stress', url: 'data/level_3.json' },
+//                 { color: '#DD5454', weight: 3, key: 'LTS4', zIndex: 4, title: 'LTS 4 - High Stress', url: 'data/level_4.json' }]
+const settings = [{ color: '#1C7C54', weight: 3, key: 'LTS1', zIndex: 1, title: 'Low stress for most (LTS 1)', url: 'data/level_1.json' },
+                { color: '#0099cc', weight: 3, key: 'LTS2', zIndex: 2, title: 'Low stress for some (LTS 2)', url: 'data/level_2.json' },
+                { color: '#F0C808', weight: 3, key: 'LTS3', zIndex: 3, title: 'Low stress for few (LTS 3)', url: 'data/level_3.json' },
+                { color: '#DD5454', weight: 3, key: 'LTS4', zIndex: 4, title: 'Low stress for very few (LTS 4)', url: 'data/level_4.json' }]
 const homePage = 'https://bikeottawa.ca/index.php/advocacy/advocacy-news/213-data_group'
-const legendTitle = 'TriCity Cycling Stress Map'
+const legendTitle = 'TriCity Traffic Stress Cycling Map'
 const layers = {}
 const tree = rbush.rbush();
 
@@ -35,7 +39,8 @@ function addLegend () {
   const legend = L.control({position: 'topright'})
   legend.onAdd = function (map) {
     const div = L.DomUtil.create('div', 'info legend')
-    let legendHtml = '<center><a href="' + homePage + '" target="_blank"><h3>' + legendTitle + '</h3></a></center><table>'
+    //let legendHtml = '<center><a href="' + homePage + '" target="_blank"><h3>' + legendTitle + '</h3></a></center><table>'
+    let legendHtml = '<center><h3>' + legendTitle + '</h3></a></center><table>'
     for (let setting of settings) {
       legendHtml += addLegendLine(setting)
     }
