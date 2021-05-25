@@ -3363,6 +3363,10 @@
             49.2801596
           ],
           [
+            -122.7872397,
+            49.2805373
+          ],
+          [
             -122.7872232,
             49.2805705
           ],
@@ -9888,7 +9892,7 @@
             49.2532317
           ],
           [
-            -122.7418409,
+            -122.74184,
             49.2532122
           ],
           [
@@ -20755,7 +20759,7 @@
             49.2530779
           ],
           [
-            -122.7417089,
+            -122.741708,
             49.2531569
           ],
           [
@@ -20809,8 +20813,8 @@
             49.2510342
           ],
           [
-            -122.7341428,
-            49.2509419
+            -122.7342185,
+            49.2509805
           ]
         ]
       }
@@ -21683,6 +21687,14 @@
           [
             -122.7744481,
             49.2578911
+          ],
+          [
+            -122.7742519,
+            49.2578081
+          ],
+          [
+            -122.7727088,
+            49.2571547
           ],
           [
             -122.7717576,
@@ -23563,7 +23575,7 @@
             49.2994572
           ],
           [
-            -122.8007076,
+            -122.800707,
             49.2994188
           ],
           [
@@ -25266,12 +25278,8 @@
             49.2608878
           ],
           [
-            -122.775342,
-            49.2590894
-          ],
-          [
-            -122.7753029,
-            49.2586787
+            -122.7753424,
+            49.2591815
           ]
         ]
       }
@@ -27419,7 +27427,7 @@
             49.2978477
           ],
           [
-            -122.8005847,
+            -122.800584,
             49.2993962
           ],
           [
@@ -29737,6 +29745,54 @@
           [
             -122.7800914,
             49.2638834
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/944683778",
+        "highway": "secondary",
+        "name": "Kingsway Avenue",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7753327,
+            49.2589923
+          ],
+          [
+            -122.7753029,
+            49.2586787
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/944683779",
+        "highway": "secondary",
+        "name": "Kingsway Avenue",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7753424,
+            49.2591815
+          ],
+          [
+            -122.775342,
+            49.2590894
+          ],
+          [
+            -122.7753327,
+            49.2589923
           ]
         ]
       }
