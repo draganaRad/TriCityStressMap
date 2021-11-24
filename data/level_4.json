@@ -25142,9 +25142,9 @@
         "id": "way/573379922",
         "highway": "primary",
         "name": "Lougheed Highway",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='primary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
         "lanes": "3",
-        "cycleway": "lane",
+        "cycleway": "separate",
         "surface": "asphalt"
       },
       "geometry": {
@@ -25296,9 +25296,9 @@
         "id": "way/573379988",
         "highway": "primary",
         "name": "Lougheed Highway",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='primary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
         "lanes": "3",
-        "cycleway": "lane",
+        "cycleway": "separate",
         "surface": "paved"
       },
       "geometry": {
@@ -25344,9 +25344,9 @@
         "id": "way/573379991",
         "highway": "primary",
         "name": "Lougheed Highway",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='primary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
         "lanes": "2",
-        "cycleway": "lane",
+        "cycleway": "separate",
         "surface": "asphalt"
       },
       "geometry": {
@@ -25369,9 +25369,9 @@
         "id": "way/573379993",
         "highway": "primary",
         "name": "Lougheed Highway",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='primary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
         "lanes": "3",
-        "cycleway": "lane",
+        "cycleway": "separate",
         "surface": "paved"
       },
       "geometry": {
