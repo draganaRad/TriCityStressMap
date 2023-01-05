@@ -33,6 +33,7 @@ L.tileLayer(
 ).addTo(map);
 // Add BikeOttawa attribution
 map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
+map.attributionControl.addAttribution('updated Jan 2023');
 
 addLegend()
 // show hide legend
